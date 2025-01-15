@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Kalnia:wght@300;400;500;600;700&display=swap');
+/*Laptop*/
+body{
+    margin: 0 auto;
+}
+
+#section1{
+    background-image: url(./images/671643426f6e8e8e4c92f0cc720fff1d.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#navBar{
+    border: 1px solid #d61e1e;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+.section1Button{
+    color: #d61e1e;
+    font-size: 1.3rem;
+    font-family: 'Calistoga', serif;
+    background-color: transparent;
+    border: none;
+}
+
+.contactButton > a{
+    color: #d61e1e;
+    text-decoration: none;
+}
+
+/* Smaller screen */
+@media screen and (max-width: 1026px){
+    
+}
