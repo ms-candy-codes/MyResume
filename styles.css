@@ -16,7 +16,7 @@ body{
 }
 
 #navBar{
-    border: 1px solid #d61e1e;
+    border-bottom: 1px solid #d61e1e;
     padding: 0;
     margin: 0;
     display: flex;
@@ -37,8 +37,17 @@ body{
     text-decoration: none;
 }
 
+.workAvailability{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    list-style: circle;
+    font-size: 1.3rem;
+    color: #d61e1e
+}
+
 /* Smaller screen */
-@media screen and (max-width: 1026px){
+@media screen and (max-width: 1000px){
     .section1Button{
         font-size: 0.7rem;
     }
