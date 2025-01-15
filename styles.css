@@ -40,6 +40,6 @@ body{
 /* Smaller screen */
 @media screen and (max-width: 1026px){
     .section1Button{
-        font-size: 1rem;
+        font-size: 0.7rem;
     }
 }
