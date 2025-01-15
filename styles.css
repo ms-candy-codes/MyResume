@@ -22,7 +22,7 @@ body{
     margin: 0;
     display: flex;
     justify-content: space-between;
-    padding: 3%;
+    padding: 2%;
 }
 
 .section1Button{
@@ -84,8 +84,24 @@ body{
     left: 25%;
 }
 
+.heroParagraphs{
+    color: #d61e1e;
+    font-family: 'Calistoga', serif;
+    font-weight: unset;
+    font-size: 1rem;
+    line-height: 1.3;
+    position: absolute;
+    right: 5%;
+    top: 45%;
+    text-align: center;
+}
+
 /* Smaller screen */
 @media screen and (max-width: 1000px){
+    #navBar{
+        padding: 3%;
+    }
+
     .section1Button{
         font-size: 0.7rem;
     }
@@ -117,5 +133,11 @@ body{
     .designerText{
         bottom: 53%;
         width: 30%;
+    }
+
+    .heroParagraphs{
+        font-size: 0.35rem;
+        top: 33%;
+        right: 2%;
     }
 }
