@@ -51,4 +51,9 @@ body{
     .section1Button{
         font-size: 0.7rem;
     }
+
+    .workAvailability{
+        top:20%;
+        font-size: 1.1rem;
+    }
 }
