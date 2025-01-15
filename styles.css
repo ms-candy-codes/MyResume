@@ -46,6 +46,33 @@ body{
     color: #d61e1e
 }
 
+.frontendText, .developerText, .designerText{
+    margin: 2% 0 0 0;
+    font-family: 'Kalnia', serif;
+    font-weight: lighter;
+    font-size: 5rem;
+    color: #d61e1e;
+    position: absolute;
+}
+
+.frontendText{
+    left: 45%;
+}
+
+.developerText{
+    margin: 0;
+    font-weight: 600;
+    font-size: 5rem;
+    left: 55%;
+    top: 25%;
+}
+
+.designerText{
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+}
+
 /* Smaller screen */
 @media screen and (max-width: 1000px){
     .section1Button{
