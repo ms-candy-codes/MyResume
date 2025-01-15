@@ -62,7 +62,6 @@ body{
 .developerText{
     margin: 0;
     font-weight: 600;
-    font-size: 5rem;
     left: 55%;
     top: 25%;
 }
@@ -82,5 +81,9 @@ body{
     .workAvailability{
         top:20%;
         font-size: 1.1rem;
+    }
+
+    .frontendText, .developerText, .designerText{
+        font-size: 2rem;
     }
 }
