@@ -2,6 +2,7 @@
 /*Laptop*/
 body{
     margin: 0 auto;
+    overflow-x: hidden;
 }
 
 #section1{
@@ -66,6 +67,17 @@ body{
     top: 30%;
 }
 
+.arrow{
+    width: 10%;
+    transform: rotate(123deg);
+    position: absolute;
+    border: 2px solid #d61e1e;
+    padding: 0;
+    margin: 0;
+    top: 53%;
+    left: 45%;
+}
+
 .designerText{
     position: absolute;
     bottom: 20%;
@@ -79,17 +91,31 @@ body{
     }
 
     .workAvailability{
-        top:20%;
-        left: 5%;
-        font-size: 0.8rem;
+        top:30%;
+        left: 3%;
+        font-size: 0.5rem;
     }
 
     .frontendText, .developerText, .designerText{
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .frontendText{
-        left: 50%;
+        left: 40%;
+        top: 20%;
+    }
+
+    .developerText{
+        left: 45%;
         top: 25%;
+    }
+
+    .arrow{
+        top: 36%;
+    }
+
+    .designerText{
+        bottom: 50%;
+        width: 30%;
     }
 }
