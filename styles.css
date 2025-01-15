@@ -63,13 +63,13 @@ body{
     margin: 0;
     font-weight: 600;
     left: 55%;
-    top: 25%;
+    top: 30%;
 }
 
 .designerText{
     position: absolute;
     bottom: 20%;
-    left: 30%;
+    left: 25%;
 }
 
 /* Smaller screen */
@@ -80,10 +80,16 @@ body{
 
     .workAvailability{
         top:20%;
-        font-size: 1.1rem;
+        left: 5%;
+        font-size: 0.8rem;
     }
 
     .frontendText, .developerText, .designerText{
         font-size: 2rem;
+    }
+
+    .frontendText{
+        left: 50%;
+        top: 25%;
     }
 }
