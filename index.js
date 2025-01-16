@@ -30,7 +30,6 @@ function cardHandler(event) {
         }
     });
     event.currentTarget.classList.add("hoverStyles");
-
     if (cardText) {
         cardText.style.display = "flex";
     }
@@ -45,5 +44,24 @@ function exit() {
         }
     });
 }
+
+function adjustSections() {
+    let section2 = document.getElementById("section2");
+    let section3 = document.getElementById("section3");
+    let screenHeight = window.innerHeight;
+
+    // Ensure section2 fits its content or the viewport height
+    if (section2.offsetHeight < screenHeight) {
+        section2.style.minHeight = `${screenHeight}px`;
+    }
+
+    // Add a margin to section3 to prevent overlap
+    let section2Height = section2.offsetHeight;
+    section3.style.marginTop = `${section2Height}px`;
+}
+
+// Adjust on load and resize
+adjustSections();
+window.addEventListener("resize", adjustSections);
 
 clicks();

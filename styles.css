@@ -106,7 +106,7 @@ body{
 /*SECTION 2*/
 #section2{
     width: 100vw;
-    height: 100vh;
+    height: 80vh;
     background-color: rgb(254, 254, 255);
 }
 
@@ -153,12 +153,16 @@ body{
     justify-content: center;
     align-items: center;
     -webkit-text-stroke: 0.5px rgb(94, 93, 93);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 1;
 }
 
 .hoverStyles{
     width: 540px;
     height: 480px;
     border-radius: 5%;
+    opacity: 1;
 }
 
 .contactCall{
@@ -235,7 +239,7 @@ ul{
     }
 
     .frontendText{
-        left: 40%;
+        left: 35%;
         top: 20%;
     }
 
