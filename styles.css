@@ -182,17 +182,18 @@ body{
     background-repeat: repeat;
     padding: 0;
     margin: 0;
-    width: 90vw;
-    height: 100vh;
+    width: 100vw;
+    height: 200vh;
     display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
-#softSkill{
+#softSkill, #technologies{
     color: #d61e1e;
 }
 
-.skillTitle{
+.skillTitle, .techDiv{
     font-size: 1.3rem;
     margin: 5% 5% 5% 8%;
     text-align: center;
@@ -202,9 +203,13 @@ ul{
     list-style: none;
 }
 
-.skillListItem{
+.skillListItem, .techListItem{
     margin: 5%;
 }
+
+/* #technologies{
+    color: #d61e1e;
+} */
 
 /* Smaller screen */
 @media screen and (max-width: 1000px){
@@ -269,7 +274,7 @@ ul{
 
 
     .hoverStyles{
-        width: 440px;
+        width: 380px;
         height: 380px;
     }
 
@@ -277,7 +282,7 @@ ul{
     #softSkill{
         color: #d61e1e;
     }
-    
+
     .skillTitle{
         margin: 5% 4% 5% 10%;
     }
