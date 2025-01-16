@@ -106,7 +106,7 @@ body{
 /*SECTION 2*/
 #section2{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-color: rgb(254, 254, 255);
 }
 
@@ -202,6 +202,10 @@ ul{
     list-style: none;
 }
 
+.skillListItem{
+    margin: 5%;
+}
+
 /* Smaller screen */
 @media screen and (max-width: 1000px){
     /*SECTION 1*/
@@ -250,7 +254,7 @@ ul{
 
     /*SECTION 2*/
     #section2{
-        height: 240vh;
+        height: 250vh;
     }
 
     #cards{
@@ -265,7 +269,11 @@ ul{
 
 
     .hoverStyles{
-        width: 340px;
-        height: 280px;
+        width: 440px;
+        height: 380px;
+    }
+
+    .skillTitle{
+        margin: 5% 4% 5% 10%;
     }
 }
