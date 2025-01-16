@@ -10,7 +10,7 @@ let cards = document.querySelectorAll(".card");
 function clicks(){
     cards.forEach((card)=>{
         card.addEventListener("click", cardHandler);//adds event for desktop
-        card.addEventListener("touchstart", cardHandler);//adds event for mobile
+        card.addEventListener("touchstart", cardHandler, {passive:true});//adds event for mobile
         card.addEventListener("mouseleave", exit);//removes events for desktop
     });
 }
