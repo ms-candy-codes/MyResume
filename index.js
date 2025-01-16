@@ -12,6 +12,7 @@ function clicks() {
         card.addEventListener("mouseover", cardHandler); // For desktop
         card.addEventListener("touchstart", cardHandler); // For mobile
         card.addEventListener("mouseleave", exit); // For desktop mouse leave
+        card.addEventListener("touchend", exit);
     });
 }
 
