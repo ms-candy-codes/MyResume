@@ -183,10 +183,12 @@ body{
     padding: 0;
     margin: 0;
     width: 100vw;
-    height: 200vh;
+    height: 170vh;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 #softSkill, #technologies{
@@ -195,7 +197,7 @@ body{
 
 .skillTitle, .techDiv{
     font-size: 1.3rem;
-    margin: 5% 5% 5% 8%;
+    margin: 5% 5% 5% 5%;
     text-align: center;
 }
 
@@ -284,6 +286,6 @@ ul{
     }
 
     .skillTitle, .techDiv{
-        margin: 5% 4% 5% 10%;
+        margin: 5% 4% 5% 5%;
     }
 }
