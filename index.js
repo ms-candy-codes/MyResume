@@ -7,19 +7,26 @@
 
 let cards = document.querySelectorAll(".card");
 
-function cardSorter(){
-    cards.forEach((individualCard)=>{
-        individualCard.addEventListener("click",()=>{
-
-            cards.forEach((card)=>{
-                card.classList.remove("myColor")
-            });
-
-            individualCard.classList.add("myColor");
-
-            console.log(individualCard.classList);
-        });
+function clicks(){
+    cards.forEach((card)=>{
+        card.addEventListener("click", cardHandler);//adds event for desktop
+        card.addEventListener("touchstart", cardHandler);//adds event for mobile
+        card.addEventListener("mouseleave", exit);//removes events for desktop
     });
 }
 
-cardSorter();
+function cardHandler(event){
+    event.preventDefault();
+    cards.forEach((card)=>{
+        card.classList.remove("myColor");
+    });
+    event.currentTarget.classList.add("myColor");
+}
+
+function exit(){
+    cards.forEach((card)=>{
+        card.classList.remove("myColor");
+    });
+}
+
+clicks();
