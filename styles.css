@@ -273,6 +273,11 @@ ul{
         height: 380px;
     }
 
+    /*SECTION3*/
+    #softSkill{
+        color: #d61e1e;
+    }
+    
     .skillTitle{
         margin: 5% 4% 5% 10%;
     }
