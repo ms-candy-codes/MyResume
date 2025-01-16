@@ -279,11 +279,11 @@ ul{
     }
 
     /*SECTION3*/
-    #softSkill{
+    #softSkill, #technologies{
         color: #d61e1e;
     }
 
-    .skillTitle{
+    .skillTitle, .techDiv{
         margin: 5% 4% 5% 10%;
     }
 }
