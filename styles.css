@@ -107,6 +107,7 @@ body{
 #section2{
     width: 100vw;
     height: 80vh;
+    padding: 0 0 10% 0;
     background-color: rgb(254, 254, 255);
 }
 
@@ -177,6 +178,7 @@ body{
     color: #d61e1e;
     font-size: 1.3rem;
     text-decoration: none;
+    padding-top: 20%;
 }
 /*SECTION 3*/
 #section3{
@@ -184,7 +186,7 @@ body{
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
-    padding: 0;
+    padding: 10% 0 0 0;
     margin: 0;
     width: 100vw;
     height: 170vh;
@@ -285,6 +287,9 @@ ul{
     }
 
     /*SECTION3*/
+    #section3{
+        padding-top: 50%;
+    }
     #softSkill, #technologies{
         color: #d61e1e;
     }
