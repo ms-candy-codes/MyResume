@@ -132,11 +132,11 @@ body{
 }
 
 .image2{
-    background-image: url(./images/pexels-mikhail-nilov-7672272.jpg);
+    background-image: url(./images/pexels-mikhail-nilov-7709020.jpg);
 }
 
 .image3{
-    background-image: url(./images/pexels-mikhail-nilov-7709020.jpg);
+    background-image: url(./images/pexels-mikhail-nilov-7672272.jpg);
 }
 
 .image4{
@@ -149,24 +149,17 @@ body{
 
 .cardText{
     display: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    -webkit-text-stroke: 0.5px rgb(94, 93, 93);
 }
 
-.myColor{
-    width: 600px;
-}
-
-/* .card:hover{
+.hoverStyles{
     width: 640px;
-    height: 460px;
+    height: 480px;
     border-radius: 5%;
 }
-
-.card:hover .cardText {
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    color: white;
-} */
 
 /* Smaller screen */
 @media screen and (max-width: 1000px){
@@ -226,11 +219,8 @@ body{
     }
 
 
-    .myColor{
-        width: 300px;
+    .hoverStyles{
+        width: 440px;
+        height: 380px;
     }
-    /* .cardClicked{
-        width: 100px;
-        height: 100px;
-    } */
 }

@@ -7,25 +7,42 @@
 
 let cards = document.querySelectorAll(".card");
 
-function clicks(){
-    cards.forEach((card)=>{
-        card.addEventListener("click", cardHandler);//adds event for desktop
-        card.addEventListener("touchstart", cardHandler, {passive:true});//adds event for mobile
-        card.addEventListener("mouseleave", exit);//removes events for desktop
+function clicks() {
+    cards.forEach((card) => {
+        card.addEventListener("mouseover", cardHandler); // For desktop
+        card.addEventListener("touchstart", cardHandler); // For mobile
+        card.addEventListener("mouseleave", exit); // For desktop mouse leave
     });
 }
 
-function cardHandler(event){
-    event.preventDefault();
-    cards.forEach((card)=>{
-        card.classList.remove("myColor");
+function cardHandler(event) {
+    event.preventDefault(); 
+
+    let clickedCard = event.currentTarget;
+    
+    let cardText = clickedCard.querySelector(".cardText");
+    
+    cards.forEach((card) => {
+        card.classList.remove("hoverStyles");
+        let text = card.querySelector(".cardText");
+        if (text) {
+            text.style.display = "none";
+        }
     });
-    event.currentTarget.classList.add("myColor");
+    event.currentTarget.classList.add("hoverStyles");
+
+    if (cardText) {
+        cardText.style.display = "flex";
+    }
 }
 
-function exit(){
-    cards.forEach((card)=>{
-        card.classList.remove("myColor");
+function exit() {
+    cards.forEach((card) => {
+        card.classList.remove("hoverStyles");
+        let cardText = card.querySelector(".cardText");
+        if (cardText) {
+            cardText.style.display = "none"; 
+        }
     });
 }
 
