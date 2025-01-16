@@ -176,10 +176,31 @@ body{
 }
 /*SECTION 3*/
 #section3{
-    width: 100vw;
+    background-image: url(./images/671643426f6e8e8e4c92f0cc720fff1d.jpg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    padding: 0;
+    margin: 0;
+    width: 90vw;
     height: 100vh;
+    display: flex;
+    text-align: center;
 }
 
+#softSkill{
+    color: #d61e1e;
+}
+
+.skillTitle{
+    font-size: 1.3rem;
+    margin: 5% 5% 5% 8%;
+    text-align: center;
+}
+
+ul{
+    list-style: none;
+}
 
 /* Smaller screen */
 @media screen and (max-width: 1000px){
